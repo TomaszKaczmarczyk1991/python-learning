@@ -1,0 +1,3 @@
+print("test")
+
+# output: test
