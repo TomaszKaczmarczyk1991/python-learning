@@ -1,0 +1,15 @@
+# Small Python exercises and tests 
+
+num = 25
+synth = f"Moog Subsequent {num}"
+print(synth)
+
+synth = f"   {synth}   "
+synth = synth.strip()
+print(synth)
+
+synth = synth.replace("25", "37")
+print(synth)
+
+is_moog = "Moog" in synth
+print(is_moog)
