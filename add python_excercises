@@ -13,3 +13,13 @@ print(synth)
 
 is_moog = "Moog" in synth
 print(is_moog)
+
+
+# CONDITIONALS
+
+if (synth == "Moog Subsequent 25"):
+    print("Enjoy your Moog Subsequent 25")
+elif (synth == "Moog Subsequent 37"):
+    print("Enjoy your Moog Subsequent 37")
+else:
+    print("Go buy a moog!")
