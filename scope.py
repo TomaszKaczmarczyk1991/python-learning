@@ -1,5 +1,5 @@
-temperature = 78
 def weather():
     temperature = 90
+    print(temperature)
 
-print(temperature) # 78
+weather() # 90
