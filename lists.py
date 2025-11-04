@@ -15,3 +15,10 @@ print(pl) # ['P', 'r', 'e', 'm', 'i', 'e', 'r', ' ', 'L', 'e', 'a', 'g', 'u', 'e
 
 teams = list(range(1, 21))
 print(teams) # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+
+langs = ["Python", "C++", "C#", "HTML", "CSS", "JavaScript", "SQL", "PHP", "Java", "Rust", "Go", "Kotlin", "Lua"]
+print(langs[0]) # Python
+print(langs[5]) # JavaScript
+print(langs[-1]) # Lua
+print(langs[-2]) # Kotlin
