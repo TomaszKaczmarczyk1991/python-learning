@@ -21,4 +21,23 @@ langs = ["Python", "C++", "C#", "HTML", "CSS", "JavaScript", "SQL", "PHP", "Java
 print(langs[0]) # Python
 print(langs[5]) # JavaScript
 print(langs[-1]) # Lua
-print(langs[-2]) # Kotlin
+print(langs[-2]) # Kotlink
+
+
+random_stuff.append("Appended Item")
+print(random_stuff) # [True, 'Hi', 444, [], 'Appended Item']
+
+friends = ["Tom", "Jacob", "Michael"]
+girls = ["Riley", "Lana", "Lily"]
+
+friends.extend(girls)
+print(friends) # ['Tom', 'Jacob', 'Michael', 'Riley', 'Lana', 'Lily']
+
+friends.insert(0, "Eva")
+print(friends) # ['Eva', 'Tom', 'Jacob', 'Michael', 'Riley', 'Lana', 'Lily']
+friends.insert(2, "Joel")
+print(friends) # ['Eva', 'Tom', 'Joel', 'Jacob', 'Michael', 'Riley', 'Lana', 'Lily']
+friends.insert(-1, "John")
+print(friends) # ['Eva', 'Tom', 'Joel', 'Jacob', 'Michael', 'Riley', 'Lana', 'John', 'Lily']
+friends.append("Chad")
+print(friends) # ['Eva', 'Tom', 'Joel', 'Jacob', 'Michael', 'Riley', 'Lana', 'John', 'Lily', 'Chad']
