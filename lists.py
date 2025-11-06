@@ -78,3 +78,54 @@ print(langs) # ['Python', 'C++', 'CSS', 'JavaScript', 'SQL']
 
 del langs[::2]
 print(langs) # ['C++', 'JavaScript']
+
+
+for team in premier_league_2025:
+    print(team)
+
+# Chelsea
+# Manchester City
+# Brighton
+# Aston Villa
+# Arsenal
+# Crystal Palace
+# Brentford
+# Newcastle
+# Leeds
+# Fulham
+# West Ham
+# Burnley
+# Nottingham Forest
+# Wolverhampton
+# Tottenham
+# Liverpool
+# Sunderland
+# Bournemouth
+# Everton
+# Manchester United
+
+idx = 0
+while idx < len(premier_league_2025):
+    print(premier_league_2025[idx])
+    idx += 1
+    
+# Chelsea
+# Manchester City
+# Brighton
+# Aston Villa
+# Arsenal
+# Crystal Palace
+# Brentford
+# Newcastle
+# Leeds
+# Fulham
+# West Ham
+# Burnley
+# Nottingham Forest
+# Wolverhampton
+# Tottenham
+# Liverpool
+# Sunderland
+# Bournemouth
+# Everton
+# Manchester United
