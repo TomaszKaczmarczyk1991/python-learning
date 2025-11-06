@@ -41,3 +41,15 @@ friends.insert(-1, "John")
 print(friends) # ['Eva', 'Tom', 'Joel', 'Jacob', 'Michael', 'Riley', 'Lana', 'John', 'Lily']
 friends.append("Chad")
 print(friends) # ['Eva', 'Tom', 'Joel', 'Jacob', 'Michael', 'Riley', 'Lana', 'John', 'Lily', 'Chad']
+
+print(friends[1:6]) # ['Tom', 'Joel', 'Jacob', 'Michael', 'Riley']
+
+print(friends[7:]) # ['John', 'Lily', 'Chad']
+
+friends[2:5] = ["Rose"]
+print(friends) # ['Eva', 'Tom', 'Rose', 'Riley', 'Lana', 'John', 'Lily', 'Chad']
+
+print(friends[1:5:2]) # ['Tom', 'Riley']
+
+friends[0:1] = []
+print(friends) # ['Tom', 'Rose', 'Riley', 'Lana', 'John', 'Lily', 'Chad']
