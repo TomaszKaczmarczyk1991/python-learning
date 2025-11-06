@@ -53,3 +53,28 @@ print(friends[1:5:2]) # ['Tom', 'Riley']
 
 friends[0:1] = []
 print(friends) # ['Tom', 'Rose', 'Riley', 'Lana', 'John', 'Lily', 'Chad']
+
+friends.clear()
+print(friends) # []
+
+langs.remove("HTML") # removes only the first match!
+print(langs) # ['Python', 'C++', 'C#', 'CSS', 'JavaScript', 'SQL', 'PHP', 'Java', 'Rust', 'Go', 'Kotlin', 'Lua']
+
+langs.pop()
+print(langs) # ['Python', 'C++', 'C#', 'CSS', 'JavaScript', 'SQL', 'PHP', 'Java', 'Rust', 'Go', 'Kotlin']
+
+# langs.pop(idx)
+langs.pop(7)
+print(langs) # ['Python', 'C++', 'C#', 'CSS', 'JavaScript', 'SQL', 'PHP', 'Rust', 'Go', 'Kotlin']
+
+android_app_lang = langs.pop()
+print(android_app_lang) # Kotlin
+
+del langs[2]
+print(langs) # ['Python', 'C++', 'CSS', 'JavaScript', 'SQL', 'PHP', 'Rust', 'Go']
+
+del langs[5:]
+print(langs) # ['Python', 'C++', 'CSS', 'JavaScript', 'SQL']
+
+del langs[::2]
+print(langs) # ['C++', 'JavaScript']
