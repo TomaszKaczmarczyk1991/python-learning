@@ -79,7 +79,6 @@ print(langs) # ['Python', 'C++', 'CSS', 'JavaScript', 'SQL']
 del langs[::2]
 print(langs) # ['C++', 'JavaScript']
 
-
 for team in premier_league_2025:
     print(team)
 
@@ -129,3 +128,12 @@ while idx < len(premier_league_2025):
 # Bournemouth
 # Everton
 # Manchester United
+
+# List operators
+
+print("Chelsea" in premier_league_2025) # True
+print("Bolton" in premier_league_2025) # False
+
+friends.append("Joel")
+print(friends + ["Ryan", "Trent"]) # ['Joel', 'Ryan', 'Trent']
+
