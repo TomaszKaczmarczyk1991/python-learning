@@ -137,3 +137,16 @@ print("Bolton" in premier_league_2025) # False
 friends.append("Joel")
 print(friends + ["Ryan", "Trent"]) # ['Joel', 'Ryan', 'Trent']
 
+# count(), sort(), reverse()
+
+print(friends.count("Joel")) # 1
+
+numbers = [777, 999, -69, 0, 7, 13, 88, 420, 444]
+numbers.sort()
+print(numbers) # [-69, 0, 7, 13, 88, 420, 444, 777, 999]
+
+numbers.sort(reverse=True)
+print(numbers) # [999, 777, 444, 420, 88, 13, 7, 0, -69]
+
+numbers.reverse()
+print(numbers) # [-69, 0, 7, 13, 88, 420, 444, 777, 999]
