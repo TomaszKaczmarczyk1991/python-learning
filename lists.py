@@ -150,3 +150,13 @@ print(numbers) # [999, 777, 444, 420, 88, 13, 7, 0, -69]
 
 numbers.reverse()
 print(numbers) # [-69, 0, 7, 13, 88, 420, 444, 777, 999]
+
+
+# split(), join()
+
+synth = ["moog", "subsequent", "25"]
+synth_full_name = " ".join(synth)
+print(synth_full_name) # moog subsequent 25
+
+date = "8/11/2025"
+print(date.split("/")) # ['8', '11', '2025']
