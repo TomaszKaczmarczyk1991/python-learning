@@ -160,3 +160,20 @@ print(synth_full_name) # moog subsequent 25
 
 date = "8/11/2025"
 print(date.split("/")) # ['8', '11', '2025']
+
+
+# list unpacking
+
+runners = ["Usain", "Carl", "Eliud", "Mat", "Sebastian", "Slawomir"]
+
+gold, silver, bronze, *losers = runners
+print(gold) # Usain
+print(silver) # Carl
+print(bronze) # Eliud
+print(losers) # ['Mat', 'Sebastian', 'Slawomir']
+
+item = [4, "Pizza", "Plain", 16.99]
+quantity, *others, price = item
+print(quantity) # 4
+print(others) # ["Pizza", "Plain"]
+print(16.99) # 16.99
