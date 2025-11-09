@@ -177,3 +177,28 @@ quantity, *others, price = item
 print(quantity) # 4
 print(others) # ["Pizza", "Plain"]
 print(16.99) # 16.99
+
+# list id
+print(id(item)) # 4347425536
+no_copy = item
+print(id(no_copy)) # 4347425536 (SAME ID!!!)
+print(item is no_copy) # True
+
+# Copying lists
+copy = item.copy()
+print(id(copy)) # 4365480832
+print(item is copy) # False (Different ID)
+print(item == copy) # True (Same content)
+
+# Using slice [:] to create a shallow copy
+another_copy = item[:]
+print(id(another_copy)) # 4338496128
+print(item is another_copy) # False (Different ID)
+print(item == another_copy) # True (Same content)
+
+# Deep copy
+nested = [2, 9, ["a", "b"], 7 ]
+
+import copy
+nested_copy = copy.deepcopy(nested)
+print(nested_copy) # [2, 9, ['a', 'b'], 7]
