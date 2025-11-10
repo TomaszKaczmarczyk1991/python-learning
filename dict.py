@@ -18,3 +18,9 @@ pulp_fiction = {
         "wins": []
     }
 }
+
+# Accessing Data In Dictionaries
+print(pulp_fiction["director"]) # Quentin Tarantino
+print(pulp_fiction["mpaa_rating"]) # R
+print(pulp_fiction["main_cast"]) # ['John Travolta', 'Samuel L. Jackson', 'Uma Thurman', 'Bruce Willis', 'Ving Rhames', 'Harvey Keitel']
+print(pulp_fiction["main_cast"][1]) # Samuel L. Jackson
