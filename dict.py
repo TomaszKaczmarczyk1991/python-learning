@@ -33,3 +33,14 @@ pulp_fiction["imdb_rating"] += 1.0
 print(pulp_fiction["imdb_rating"]) # 9.8
 pulp_fiction["genres"].append("Comedy")
 print(pulp_fiction["genres"]) # ['Crime', 'Drama', 'Comedy']
+
+# pop(), popitem(), clear()
+
+pulp_fiction.pop("awards_summary") # returns item
+print(pulp_fiction) # {'title': 'Pulp Fiction', 'director': 'Quentin Tarantino', 'year': 1994, 'imdb_rating': 9.8, 'main_cast': ['John Travolta', 'Samuel L. Jackson', 'Uma Thurman', 'Bruce Willis', 'Ving Rhames', 'Harvey Keitel'], 'genres': ['Crime', 'Drama', 'Comedy'], 'mpaa_rating': 'R', 'is_great': True}
+
+pulp_fiction.popitem() # pops the latest added item
+print(pulp_fiction) # {'title': 'Pulp Fiction', 'director': 'Quentin Tarantino', 'year': 1994, 'imdb_rating': 9.8, 'main_cast': ['John Travolta', 'Samuel L. Jackson', 'Uma Thurman', 'Bruce Willis', 'Ving Rhames', 'Harvey Keitel'], 'genres': ['Crime', 'Drama', 'Comedy'], 'mpaa_rating': 'R'}
+
+pulp_fiction.clear()
+print(pulp_fiction) # {}
