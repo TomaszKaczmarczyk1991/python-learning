@@ -10,3 +10,13 @@ print(my_set) # {1, 2, 3, 4, 5, -4}
 # The order of elements may appear random because sets are unordered
 
 print(len(my_set)) # 6
+
+# remove(), discard(), clear()
+my_set.remove(3)
+print(my_set) # {1, 2, 4, 5, -4}
+
+my_set.discard(-4)
+print(my_set) # {1, 2, 4, 5}
+
+my_set.clear()
+print(my_set) # set()
