@@ -4,7 +4,10 @@ class Synth:
         self.brand = brand
         self.presets = []
     def add_preset(self, preset):
-        self.presets.append(preset)
+        if preset not in self.presets:
+            self.presets.append(preset)
+        else:
+            print('A preset with that name already exists!')
 
 subsequent25 = Synth('Subsequent 25', 'Moog', [])
 dx7 = Synth('DX 7', 'Roland', [])
@@ -19,6 +22,6 @@ print(subsequent25.brand) # Moog
 print(subsequent25.presets)
 subsequent25.add_preset('Classic Lead')
 print(subsequent25.presets) # ['Classic Lead']
-
+subsequent25.add_preset('Classic Lead') # A preset with that name already exists!
 subsequent25.add_preset('Sub Bass')
 print(subsequent25.presets) # ['Classic Lead', 'Sub Bass']
